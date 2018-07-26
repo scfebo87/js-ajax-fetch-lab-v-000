@@ -24,7 +24,7 @@ function createIssue() {
 }
 
 function showResults(json) {
-    $('#results')[0].innerHTML = `<a href="${json.html_url}">Forked Repo</a>`
+    document.getElementById('results').innerHTML = `<a href="${json.html_url}">Forked Repo</a>`
 }
 
 function forkRepo() {
