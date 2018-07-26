@@ -11,8 +11,8 @@ function showIssues(json) {
 function createIssue() {
     const repo = 'https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/issues'
     const postData = {
-        title: document.('#title')[0].val(), 
-        body: $('#body')[0].val()
+        title: document.getElementById('title').value, 
+        body: document.getElementById('body').value
     };
     fetch(repo, {
         method: 'post',
