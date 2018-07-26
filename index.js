@@ -1,5 +1,5 @@
 function getIssues() {
-    fetch('https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/issues')
+    fetch('https://api.github.com/repos/scfebo87/javascript-fetch-lab/issues')
     .then(resp => resp.json())
     .then(json => console.log(showIssues(json)));
 }
